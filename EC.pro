@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui widgets
+QT       += core gui widgets sql
 
 TARGET = EC
 TEMPLATE = app
@@ -24,10 +24,12 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-    authorization.cpp
+    authorization.cpp \
+    sqlconnection.cpp
 
 HEADERS += \
-    authorization.h
+    authorization.h \
+    sqlconnection.h
 
 FORMS += \
     authorization.ui

@@ -9,7 +9,20 @@ authorization::authorization(QWidget *parent) :
     this->setWindowIcon(QIcon(":/images/locked.png"));
 }
 
+
+//Деструктор
+
 authorization::~authorization()
 {
     delete ui;
+}
+
+
+//По нажатию кнопки происходит авторизация
+
+void authorization::on_buttonEnter_clicked()
+{
+    this->userName = ui->lineEditLogin->text();
+    this->password = ui->lineEditPassword->text();
+    qDebug()<<this->userName<<this->password;
 }

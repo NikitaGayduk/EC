@@ -62,6 +62,9 @@
       <property name="text">
        <string>Логин</string>
       </property>
+      <property name="maxLength">
+       <number>10</number>
+      </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
       </property>
@@ -78,6 +81,9 @@
      <widget class="QLineEdit" name="lineEditPassword">
       <property name="text">
        <string>Пароль</string>
+      </property>
+      <property name="maxLength">
+       <number>20</number>
       </property>
       <property name="echoMode">
        <enum>QLineEdit::Password</enum>
